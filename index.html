@@ -1,34 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./output.css">
+
   <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 0.6875rem;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+<body class="bg-grey-900 text-white font-inter flex flex-col items-center min-h-screen justify-center gap-8">
+  <div class="flex flex-col text-center items-center gap-6 w-80 md:w-84 lg:w-88 bg-grey-800 p-6 md:p-7 lg:p-8 rounded-xl">
+    <img class="rounded-full size-20" alt="Jessica Randall's avatar" src="./assets/images/avatar-jessica.jpeg">
+    <div class="flex flex-col gap-1">
+      <h1 class="text-2xl">Jessica Randall</h1>
+      <h2 class="text-green text-sm font-semibold">London, United Kingdom</h2>
+    </div>
+    <p class="text-xs">"Front-end developer and avid reader."</p>
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
+    <ul class="w-full font-bold text-center flex flex-col gap-4 md:gap-3 lg:gap-3 text-xs">
+      <li class="">
+        <a href="#" class="rounded-md bg-grey-700 py-3 block hover:bg-green hover:text-grey-800">
+          GitHub
+        </a>
+      </li>
+      <li class="">
+        <a href="#" class="rounded-md bg-grey-700 py-3 block hover:bg-green hover:text-grey-800">
+          Frontend Mentor
+        </a>
+      </li>
+      <li class="">
+        <a href="#" class="rounded-md bg-grey-700 py-3 block hover:bg-green hover:text-grey-800">
+          LinkedIn
+        </a>
+      </li>
+      <li class="">
+        <a href="#" class="rounded-md bg-grey-700 py-3 block hover:bg-green hover:text-grey-800">
+          Twitter
+        </a>
+      </li>
+      <li class="">
+        <a href="#" class="rounded-md bg-grey-700 py-3 block hover:bg-green hover:text-grey-800">
+          Instagram
+        </a>
+      </li>
+    </ul>
+  </div>
+
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </footer>
 </body>
+
 </html>
